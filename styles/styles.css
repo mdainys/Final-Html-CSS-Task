@@ -23,6 +23,9 @@ body {
   max-width: 100%;
   margin: 0 auto;
   padding: 1rem 2rem;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
 }
 
 header {
@@ -31,6 +34,7 @@ header {
   align-items: center;
   border-bottom: solid 1px #000;
   padding-bottom: 25px;
+  margin-bottom: 40px;
 
   ul {
     list-style: none;
@@ -59,12 +63,30 @@ header {
   }
 }
 
+.heroBlock {
+  .heroBlockImg {
+    width: 100%;
+    border-radius: 25px;
+  }
+}
+.heroTitle {
+  text-align: center;
+  font-size: 8rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
 @media screen and (min-width: 800px) {
   .burger {
     display: none;
   }
 }
 
+@media screen and (max-width: 990px) {
+  .heroTitle {
+    font-size: 4rem;
+  }
+}
 @media screen and (max-width: 800px) {
   nav {
     display: none;
